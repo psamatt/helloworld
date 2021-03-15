@@ -1,8 +1,8 @@
 plugins {
     id "java"
+    id "java-library"
     id "org.springframework.boot" version "2.5.0-M1"
     id "io.spring.dependency-management" version "1.0.11.RELEASE"
-    id "java-library"
     id "com.diffplug.spotless" version "5.10.1"
 }
 
@@ -37,6 +37,7 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation "org.springdoc:springdoc-openapi-ui:1.5.2"
 
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
