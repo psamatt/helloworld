@@ -1,5 +1,7 @@
 ### Hello World example application
 
+Spring Boot app build using Gradle with Docker / Docker compose, API documented using Swagger
+
 #### Gradle
 Build Jar
 ```shell
@@ -37,3 +39,7 @@ View Docker logs
 ```shell
 docker logs -f <container_id>
 ```
+
+#### Swagger
+
+Open Browser, visit: http://localhost:8080/swagger-ui.html
