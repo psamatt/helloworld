@@ -4,10 +4,11 @@ plugins {
     id "org.springframework.boot" version "2.5.0-M1"
     id "io.spring.dependency-management" version "1.0.11.RELEASE"
     id "com.diffplug.spotless" version "5.10.1"
+    id "pl.allegro.tech.build.axion-release" version "1.13.1"
 }
 
 group "com.psamatt"
-project.version = "0.0.1"
+project.version = scmVersion.version
 
 configurations {
     compileOnly {
